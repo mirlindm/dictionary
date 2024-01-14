@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <link rel="stylesheet" href="./dictionary.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="book.png" type="image/png">
+    <title>Brikena's Dictionary</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="index.html"><h1 id="heading-of-container">Dictionary by Brikena Shaqiri</h1></a>
+      </div>
+    </nav>
+    <section class="input container">
+      <h2 title="This dictionary works only for the English language for now">Understand the meaning of any <span style="color: #dd8450;">Word</span>!</h2>
+      <div class="form-wrap">
+        <div class="input-wrap">
+          <input
+            type="search"
+            name=""
+            id="inputSearch"
+            placeholder="Type your word here ..."
+          />
+          <button id="search">Check Meaning</button>
+        </div>
+      </div>
+    </section>
+    <section class="output">
+      <!-- when the data is fetched from the server -->
+      <div class="spinnerLoading">
+          <span class="loading">
+              <span class="loading-bubble loading-bubble-1"></span>
+              <span class="loading-bubble loading-bubble-2"></span>
+              <span class="loading-bubble loading-bubble-3"></span>
+          </span>
+          Loading...
+      </div>
+      <!-- your results appear here -->
+      <p class="outputPara" id="outputPara"></p>
+      <!-- pronounciation appears here -->
+      <div id="audio"><h5>Listen</h5></div>
+      <!-- when someone enters meaningless word this helps to give some suggestions -->
+      <div class="no-result"></div>
+    </section>
+    <br>
+    <h4 class="copyright">&copy; Made By: Brikena Shaqiri</h4>
+    <!-- <script src="dictionary.js"></script> -->
+    <script src="dictionary.js"></script>
+  </body>
+</html>
